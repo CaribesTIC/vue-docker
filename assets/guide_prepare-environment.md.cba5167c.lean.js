@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as p}from"./app.8317e26a.js";const C=JSON.parse('{"title":"Preparar Entorno","description":"","frontmatter":{},"headers":[],"relativePath":"guide/prepare-environment.md"}'),l={name:"guide/prepare-environment.md"},o=p("",9),e=[o];function t(c,r,D,y,i,F){return a(),n("div",null,e)}var d=s(l,[["render",t]]);export{C as __pageData,d as default};
