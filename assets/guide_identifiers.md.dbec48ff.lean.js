@@ -1,0 +1,1 @@
+import{_ as e,c as t,o,a}from"./app.d1a64201.js";const f=JSON.parse('{"title":"Identificadores","description":"","frontmatter":{},"headers":[],"relativePath":"guide/identifiers.md"}'),r={name:"guide/identifiers.md"},i=a("",5),n=[i];function s(d,c,p,l,u,h){return o(),t("div",null,n)}var _=e(r,[["render",s]]);export{f as __pageData,_ as default};
