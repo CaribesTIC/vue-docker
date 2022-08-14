@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a as r}from"./app.0d2f664b.js";const f=JSON.parse('{"title":"Introducci\xF3n","description":"","frontmatter":{},"headers":[],"relativePath":"tests/introduction.md"}'),o={name:"tests/introduction.md"},s=r("",4),n=[s];function i(c,d,u,p,l,_){return a(),t("div",null,n)}var h=e(o,[["render",i]]);export{f as __pageData,h as default};
