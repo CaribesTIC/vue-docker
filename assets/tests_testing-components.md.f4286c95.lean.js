@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as s,a}from"./app.d843b6d9.js";const f=JSON.parse('{"title":"Testeando Componentes","description":"","frontmatter":{},"headers":[],"relativePath":"tests/testing-components.md"}'),o={name:"tests/testing-components.md"},n=a("",4),r=[n];function i(c,p,d,l,u,_){return s(),t("div",null,r)}var h=e(o,[["render",i]]);export{f as __pageData,h as default};
