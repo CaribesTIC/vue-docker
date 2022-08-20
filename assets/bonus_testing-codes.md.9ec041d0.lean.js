@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as o}from"./app.28628e18.js";const b=JSON.parse('{"title":"Testeando C\xF3digos","description":"","frontmatter":{},"headers":[],"relativePath":"bonus/testing-codes.md"}'),s={name:"bonus/testing-codes.md"},r=o("",4),n=[r];function i(c,d,u,p,l,_){return a(),t("div",null,n)}var f=e(s,[["render",i]]);export{b as __pageData,f as default};
