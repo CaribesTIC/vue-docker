@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,d as r}from"./app.426dd711.js";const u=JSON.parse('{"title":"Pr\xE1cticas que garantizan resultados","description":"","frontmatter":{},"headers":[],"relativePath":"practices/intro.md"}'),o={name:"practices/intro.md"},s=r("",4),i=[s];function n(c,l,m,d,p,g){return t(),a("div",null,i)}const f=e(o,[["render",n]]);export{u as __pageData,f as default};
