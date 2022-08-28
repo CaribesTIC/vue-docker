@@ -7,7 +7,7 @@
     <meta name="description" content="Dockeriza Vue">
     <link rel="stylesheet" href="/vue-docker/assets/style.a21a32a8.css">
     <link rel="modulepreload" href="/vue-docker/assets/app.82f05033.js">
-    <link rel="modulepreload" href="/vue-docker/assets/guide_test-mode.md.924a9610.lean.js">
+    <link rel="modulepreload" href="/vue-docker/assets/guide_test-mode.md.1b5cf241.lean.js">
     
     <script id="check-dark-light">(()=>{const e=localStorage.getItem("vitepress-theme-appearance"),a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
   </head>
@@ -16,7 +16,7 @@
 <span class="line"><span style="color:#FFCB6B;">command</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;"> sh </span><span style="color:#89DDFF;">-</span><span style="color:#A6ACCD;">c </span><span style="color:#89DDFF;">&quot;</span><span style="color:#C3E88D;">cd /app; npm install; npm run dev</span><span style="color:#89DDFF;">&quot;</span></span>
 <span class="line"></span></code></pre></div><p>Tenga en cuenta que mientras no cancelemos el <code>npm run dev</code> que ejecutamos como último comando en modo <code>development</code>, el contenedor se mantendrá vivo. Por lo que podemos abrir otro terminal y entrar dentro del contenedor con el siguiente comando:</p><div class="language-sh"><button class="copy"></button><span class="lang">sh</span><pre><code><span class="line"><span style="color:#A6ACCD;">docker </span><span style="color:#82AAFF;">exec</span><span style="color:#A6ACCD;"> -it vue_dev_env bash</span></span>
 <span class="line"></span></code></pre></div><p>Listo, ya estamos dentro del contenedor.</p><div class="language-sh"><button class="copy"></button><span class="lang">sh</span><pre><code><span class="line"><span style="color:#A6ACCD;">root@4e31d8b8d95b:/app#</span></span>
-<span class="line"></span></code></pre></div><p>Por lo que si instalamos correctamente Vitest y Vue Test Utils al principio del tutorial podemos probarlo ejecutando <code>npm run test:unit</code>.</p><div class="language-sh"><button class="copy"></button><span class="lang">sh</span><pre><code><span class="line"><span style="color:#A6ACCD;">root@4e31d8b8d95b:/app# npm run test:unit</span></span>
+<span class="line"></span></code></pre></div><p>Por lo que, si ya tenemos instalado correctamente Vitest y Vue Test Utils, como se <a href="./../guide/simple-example.html">indicó</a> previamente, entonces podemos probar la aplicación.</p><p>Ejecutemos la instrucción <code>npm run test:unit</code>.</p><div class="language-sh"><button class="copy"></button><span class="lang">sh</span><pre><code><span class="line"><span style="color:#A6ACCD;">root@4e31d8b8d95b:/app# npm run test:unit</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#89DDFF;">&gt;</span><span style="color:#A6ACCD;"> docker-vue-example@0.0.0 test:unit</span></span>
 <span class="line"><span style="color:#89DDFF;">&gt;</span><span style="color:#A6ACCD;"> vitest --environment jsdom</span></span>
@@ -35,7 +35,7 @@
 <span class="line"><span style="color:#A6ACCD;"> PASS  Waiting </span><span style="color:#89DDFF;">for</span><span style="color:#A6ACCD;"> file changes...                                                                                                   </span></span>
 <span class="line"><span style="color:#A6ACCD;">       press h to show help, press q to quit</span></span>
 <span class="line"></span></code></pre></div><blockquote><p>Presione <code>Ctrl-C</code> para detener la prueba y ejecute <code>exit</code> para salir del contenedor. Presione <code>Ctrl-C</code> para detener el contenedor en modo <code>development</code>.</p></blockquote></div></div></main><!--[--><!--]--><footer class="VPDocFooter" data-v-f0af2311 data-v-a54a85bd><!----><div class="prev-next" data-v-a54a85bd><div class="pager" data-v-a54a85bd><a class="pager-link prev" href="/vue-docker/guide/development-mode.html" data-v-a54a85bd><span class="desc" data-v-a54a85bd>Previous page</span><span class="title" data-v-a54a85bd>Modo Desarrollo</span></a></div><div class="has-prev pager" data-v-a54a85bd><a class="pager-link next" href="/vue-docker/guide/production-mode.html" data-v-a54a85bd><span class="desc" data-v-a54a85bd>Next page</span><span class="title" data-v-a54a85bd>Modo Produción</span></a></div></div></footer><!--[--><!--]--></div></div></div></div></div><!----><!--[--><!--]--></div></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"guide_conclusion.md\":\"5074e91f\",\"guide_development-mode.md\":\"5aad979b\",\"guide_docker.md\":\"0bf3bacd\",\"guide_intro.md\":\"98134d44\",\"guide_production-mode.md\":\"e2e2a400\",\"guide_simple-example.md\":\"842575f1\",\"guide_test-mode.md\":\"924a9610\",\"index.md\":\"daf806fc\"}")</script>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"guide_conclusion.md\":\"5074e91f\",\"guide_development-mode.md\":\"f32b0ed5\",\"guide_docker.md\":\"0bf3bacd\",\"guide_intro.md\":\"98134d44\",\"guide_production-mode.md\":\"392a8156\",\"guide_simple-example.md\":\"6e3e6612\",\"guide_test-mode.md\":\"1b5cf241\",\"index.md\":\"daf806fc\"}")</script>
     <script type="module" async src="/vue-docker/assets/app.82f05033.js"></script>
     
   </body>
