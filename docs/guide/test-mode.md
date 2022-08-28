@@ -22,7 +22,9 @@ Listo, ya estamos dentro del contenedor.
 root@4e31d8b8d95b:/app#
 ```
 
-Por lo que si instalamos correctamente Vitest y Vue Test Utils al principio del tutorial podemos probarlo ejecutando `npm run test:unit`.
+Por lo que, si ya tenemos instalado correctamente Vitest y Vue Test Utils, como se [indicó](../guide/simple-example.html) previamente, entonces podemos probar la aplicación.
+
+Ejecutemos la instrucción `npm run test:unit`.
 
 ```sh
 root@4e31d8b8d95b:/app# npm run test:unit

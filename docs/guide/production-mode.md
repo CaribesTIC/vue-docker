@@ -1,6 +1,6 @@
 # Modo Producción
 
-¿Qué es diferente en la configuración de `docker-compose.yml` de la versión de desarrollo?
+>**¿Cuál es la diferecia en esta configuración versus la versión de desarrollo?**
 
 📃`docker-compose.yml`
 ```sh
@@ -16,8 +16,8 @@ services:
       NODE_ENV: production
     container_name: vue_dev_env
 ```
-- Compilación especificada desde `Dockerfile` en lugar de usar una `image`
-- La variable de entorno `NODE_ENV` cambió: `development` -> `production`
+- Compilación especificada desde `Dockerfile` en lugar de usar una `image`.
+- La variable de entorno `NODE_ENV` cambió: `development` -> `production`.
 - No hay una sección de comandos porque `nginx` servirá la estática.
 
 La configuración de `nginx` es lo más simple posible y no sobrecarga el proceso de entrega de archivos y recurre a `/index.html` en caso de que intenten obtener algún archivo que no esté allí. Lo más interesante radica en el `Dockerfile`: construcción de varias etapas (_multi-stage_), que se utiliza para reducir el artefacto resultante.

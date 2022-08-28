@@ -38,7 +38,7 @@ Tenga en cuenta lo siguiente:
 docker-compose -f docker-compose.dev.yml up
 ```
 
-Despues de ejecutar la instrucción anterior el terminal arrojará lo siguientes mensajes:
+Entonces el terminal arrojará los siguientes mensajes:
 
 ```
 Starting vue_dev_env ... done
@@ -61,7 +61,7 @@ vue_dev_env |   ➜  Local:   http://localhost:5173/
 vue_dev_env |   ➜  Network: use --host to expose
 ```
 
-Como he de notarse, el contenedor levantó, pero si intentáramos abrir el navegador con la ruta `http://localhost:5173/` seguramente nos aparecerá algo como la siguiente imagen.
+El contenedor levantó, pero si intentáramos abrir el navegador con la ruta `http://localhost:5173/` nos aparecerá la siguiente imagen.
 
 ![mode-develop](./img/mode-develop1.jpg)
 
@@ -92,7 +92,7 @@ export default defineConfig({
 })
 ```
 
-Entonces, volvamos a ejecutar `docker-compose -f docker-compose.dev.yml up` y ahora sí el terminal mostrará alguna nueva **IP** del contenedor.
+Luego, volvamos a ejecutar `docker-compose -f docker-compose.dev.yml up` y ahora sí se mostrará alguna nueva **IP** del contenedor.
 
 ```sh
 vue_dev_env |   ➜  Local:   http://localhost:5173/
