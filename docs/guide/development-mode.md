@@ -9,7 +9,7 @@ Echemos un vistazo a la siguiente plantilla.
 version: "3.9"
 services:
   web:    
-    image: node
+    image: node:18.8.0
     ports:
       - "5173:80"
     volumes:
@@ -24,7 +24,7 @@ services:
 Tenga en cuenta lo siguiente:
 
 1. Declaramos el servicio `web`.
-    - Seleccione la imagen que se compilará, en este caso `node`. **Es mejor detallar las versiones utilizadas**, vale la pena mantenerlas exactamente igual que la compilación de producción. (Ejemplo: `image: node:16.10-alpine3`).
+    - Seleccione la imagen que se compilará, en este caso `node:18.8.0`. **Es mejor detallar las versiones utilizadas**, vale la pena mantenerlas exactamente igual que la compilación de producción.
 2. Seleccionamos los puertos que reflejarán los puertos del contenedor en ejecución en nuestro sistema `host`.
 3. Montamos todo, desde el directorio actual hasta el contenedor. Esto es necesario para que los cambios locales llamen inmediatamente a reconstruir.
 4. `environment` le permite establecer variables de entorno que sean de interés en su caso particular.
