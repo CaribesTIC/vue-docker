@@ -2,6 +2,8 @@
 
 >**¿Cuál es la diferecia en esta configuración versus la versión de desarrollo?**
 
+## docker-compose.yml
+
 📃`docker-compose.yml`
 ```sh
 version: "3.9"
@@ -52,7 +54,38 @@ En esencia, un artefacto en nuestro caso es un contenedor `nginx` con estática.
 6. Copiamos los archivos desde la primera etapa a la carpeta a la que distribuiremos las estáticas.
 7. Copiamos el archivo de configuración de `nginx` en el artefacto.
 
-Puede ejecutar el artefacto de esta manera:
+## nginx.conf
+
+Las opciones de configuración de NGINX se conocen como _“directivas”_: estas se organizan en grupos, conocidos indistintamente como bloques o contextos. Copie y pegue este archivo en la raiz del proyecto.
+
+📃`nginx.conf`
+```sh
+worker_processes auto;
+
+events {
+    worker_connections 8000;
+    multi_accept on;
+}
+
+http {
+  include       /etc/nginx/mime.types;
+  default_type  application/octet-stream;
+
+  server {
+      listen   80;
+      listen   [::]:80 default ipv6only=on;
+
+      root /opt/site;
+
+      location / {
+          try_files $uri $uri/ /index.html;
+      }
+  }
+}
+```
+## Build Up
+
+Ahora puede ejecutar el artefacto de esta manera:
 
 ```sh
 docker-compose up -d --build
