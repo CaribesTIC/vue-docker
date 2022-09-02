@@ -7,7 +7,7 @@
     <meta name="description" content="Dockeriza Vue">
     <link rel="stylesheet" href="/vue-docker/assets/style.a21a32a8.css">
     <link rel="modulepreload" href="/vue-docker/assets/app.34ee827a.js">
-    <link rel="modulepreload" href="/vue-docker/assets/guide_production-mode.md.7b63c83f.lean.js">
+    <link rel="modulepreload" href="/vue-docker/assets/guide_production-mode.md.b99f44fc.lean.js">
     
     <script id="check-dark-light">(()=>{const e=localStorage.getItem("vitepress-theme-appearance"),a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
   </head>
@@ -23,7 +23,7 @@
 <span class="line"><span style="color:#A6ACCD;">    environment:</span></span>
 <span class="line"><span style="color:#A6ACCD;">      NODE_ENV: production</span></span>
 <span class="line"><span style="color:#A6ACCD;">    container_name: vue_dev_env</span></span>
-<span class="line"></span></code></pre></div><ul><li>Compilación especificada desde <code>Dockerfile</code> en lugar de usar una <code>image</code>.</li><li>La variable de entorno <code>NODE_ENV</code> cambió: <code>development</code> -&gt; <code>production</code>.</li><li>No hay una sección de comandos porque <code>nginx</code> servirá la estática.</li></ul><blockquote><p>La configuración de <code>nginx</code> es lo más simple posible y no sobrecarga el proceso de entrega de archivos y recurre a <code>/index.html</code> en caso de que intenten obtener algún archivo que no esté allí. Lo más interesante radica en el <code>Dockerfile</code>: construcción de varias etapas (<em>multi-stage</em>), que se utiliza para reducir el artefacto resultante.</p></blockquote><h2 id="dockerfile" tabindex="-1">Dockerfile <a class="header-anchor" href="#dockerfile" aria-hidden="true">#</a></h2><p>📃<code>Dockerfile</code></p><div class="language-sh"><button class="copy"></button><span class="lang">sh</span><pre><code><span class="line"><span style="color:#A6ACCD;">FROM node:18.8.0 AS build</span></span>
+<span class="line"></span></code></pre></div><ul><li>Compilación especificada desde <code>Dockerfile</code> en lugar de usar una <code>image</code>.</li><li>La variable de entorno <code>NODE_ENV</code> cambió: <code>development</code> -&gt; <code>production</code>.</li><li>No hay una sección de comandos porque <code>nginx</code> servirá la estática.</li></ul><p>La configuración de <code>nginx</code> es lo más simple posible y no sobrecarga el proceso de entrega de archivos y recurre a <code>/index.html</code> en caso de que intenten obtener algún archivo que no esté allí. Lo más interesante radica en el <code>Dockerfile</code>: construcción de varias etapas (<em>multi-stage</em>), que se utiliza para reducir el artefacto resultante.</p><h2 id="dockerfile" tabindex="-1">Dockerfile <a class="header-anchor" href="#dockerfile" aria-hidden="true">#</a></h2><p>📃<code>Dockerfile</code></p><div class="language-sh"><button class="copy"></button><span class="lang">sh</span><pre><code><span class="line"><span style="color:#A6ACCD;">FROM node:18.8.0 AS build</span></span>
 <span class="line"><span style="color:#A6ACCD;">WORKDIR /app</span></span>
 <span class="line"><span style="color:#A6ACCD;">COPY package.json package.json</span></span>
 <span class="line"><span style="color:#A6ACCD;">RUN npm install</span></span>
@@ -76,7 +76,7 @@
 <span class="line"><span style="color:#A6ACCD;">  }</span></span>
 <span class="line"><span style="color:#A6ACCD;">]</span></span>
 <span class="line"></span></code></pre></div><p>Ok, ahora copie y pegue tal cual la dirección <strong>IP</strong> en la <strong>URL</strong> del navegador.</p><p><img src="/vue-docker/assets/production.11466d7b.png" alt="production"></p></div></div></main><!--[--><!--]--><footer class="VPDocFooter" data-v-f0af2311 data-v-a54a85bd><!----><div class="prev-next" data-v-a54a85bd><div class="pager" data-v-a54a85bd><a class="pager-link prev" href="/vue-docker/guide/test-mode.html" data-v-a54a85bd><span class="desc" data-v-a54a85bd>Previous page</span><span class="title" data-v-a54a85bd>Modo Prueba</span></a></div><div class="has-prev pager" data-v-a54a85bd><a class="pager-link next" href="/vue-docker/guide/conclusion.html" data-v-a54a85bd><span class="desc" data-v-a54a85bd>Next page</span><span class="title" data-v-a54a85bd>Conclusión</span></a></div></div></footer><!--[--><!--]--></div></div></div></div></div><!----><!--[--><!--]--></div></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"guide_conclusion.md\":\"bd2ca663\",\"guide_development-mode.md\":\"f38826e4\",\"guide_docker.md\":\"d26f8b78\",\"guide_intro.md\":\"86358651\",\"guide_production-mode.md\":\"7b63c83f\",\"guide_simple-example.md\":\"0cb3d0c0\",\"guide_test-mode.md\":\"ce1d519c\",\"index.md\":\"bf79d4f2\"}")</script>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"guide_conclusion.md\":\"bd2ca663\",\"guide_development-mode.md\":\"f38826e4\",\"guide_docker.md\":\"d26f8b78\",\"guide_intro.md\":\"86358651\",\"guide_production-mode.md\":\"b99f44fc\",\"guide_simple-example.md\":\"0cb3d0c0\",\"guide_test-mode.md\":\"ce1d519c\",\"index.md\":\"bf79d4f2\"}")</script>
     <script type="module" async src="/vue-docker/assets/app.34ee827a.js"></script>
     
   </body>
