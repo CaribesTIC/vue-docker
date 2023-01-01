@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as o}from"./app.ab7ee350.js";const A=JSON.parse('{"title":"Modo Prueba","description":"","frontmatter":{},"headers":[],"relativePath":"guide/test-mode.md"}'),e={name:"guide/test-mode.md"},l=o("",13),p=[l];function t(c,r,C,y,i,D){return n(),a("div",null,p)}const m=s(e,[["render",t]]);export{A as __pageData,m as default};
