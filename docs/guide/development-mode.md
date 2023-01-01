@@ -40,7 +40,7 @@ docker-compose -f docker-compose.dev.yml up
 
 Entonces el terminal arrojará los siguientes mensajes:
 
-```
+```sh
 Starting vue_dev_env ... done
 Attaching to vue_dev_env
 vue_dev_env | 
