@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,N as o}from"./chunks/framework.4bc26c66.js";const u=JSON.parse('{"title":"Componente Radio","description":"","frontmatter":{},"headers":[],"relativePath":"tuto/app-radio.md"}'),l={name:"tuto/app-radio.md"},e=o("",52),p=[e];function t(c,r,D,F,y,i){return n(),a("div",null,p)}const C=s(l,[["render",t]]);export{u as __pageData,C as default};

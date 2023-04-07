@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,N as p}from"./chunks/framework.4bc26c66.js";const C=JSON.parse('{"title":"Testeando Input","description":"","frontmatter":{},"headers":[],"relativePath":"bonus/app-input-test.md"}'),l={name:"bonus/app-input-test.md"},o=p("",3),e=[o];function t(F,c,r,y,D,A){return a(),n("div",null,e)}const u=s(l,[["render",t]]);export{C as __pageData,u as default};
