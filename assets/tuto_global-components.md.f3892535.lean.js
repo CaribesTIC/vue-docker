@@ -1,0 +1,1 @@
+import{_ as s,c as a,o,N as e}from"./chunks/framework.4bc26c66.js";const F=JSON.parse('{"title":"Componentes Globales","description":"","frontmatter":{},"headers":[],"relativePath":"tuto/global-components.md"}'),n={name:"tuto/global-components.md"},l=e("",18),p=[l];function t(r,c,i,D,m,y){return o(),a("div",null,p)}const A=s(n,[["render",t]]);export{F as __pageData,A as default};

@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as e,N as o}from"./chunks/framework.4bc26c66.js";const u=JSON.parse('{"title":"Componente Textarea","description":"","frontmatter":{},"headers":[],"relativePath":"tuto/app-textarea.md"}'),n={name:"tuto/app-textarea.md"},l=o("",43),p=[l];function t(c,r,D,F,y,i){return e(),a("div",null,p)}const m=s(n,[["render",t]]);export{u as __pageData,m as default};

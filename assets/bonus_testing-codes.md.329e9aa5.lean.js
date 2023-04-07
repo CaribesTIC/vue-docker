@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,N as o}from"./chunks/framework.4bc26c66.js";const b=JSON.parse('{"title":"Testeando Códigos","description":"","frontmatter":{},"headers":[],"relativePath":"bonus/testing-codes.md"}'),s={name:"bonus/testing-codes.md"},r=o("",4),n=[r];function i(c,d,u,l,p,_){return a(),t("div",null,n)}const f=e(s,[["render",i]]);export{b as __pageData,f as default};

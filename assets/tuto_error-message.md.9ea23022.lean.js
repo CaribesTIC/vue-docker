@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,N as o}from"./chunks/framework.4bc26c66.js";const u=JSON.parse('{"title":"Componente ErrorMessage","description":"","frontmatter":{},"headers":[],"relativePath":"tuto/error-message.md"}'),l={name:"tuto/error-message.md"},p=o("",24),e=[p];function t(r,c,D,F,y,i){return n(),a("div",null,e)}const C=s(l,[["render",t]]);export{u as __pageData,C as default};

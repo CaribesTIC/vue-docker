@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,N as l}from"./chunks/framework.4bc26c66.js";const A=JSON.parse('{"title":"Formulario Simple","description":"","frontmatter":{},"headers":[],"relativePath":"tuto/simple-form.md"}'),o={name:"tuto/simple-form.md"},p=l("",45),e=[p];function t(c,r,D,F,y,i){return n(),a("div",null,e)}const d=s(o,[["render",t]]);export{A as __pageData,d as default};
