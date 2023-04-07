@@ -1,14 +1,16 @@
-export default {
+import { defineConfig } from 'vitepress'
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
   title: 'Vue-Docker',
   description: 'Dockeriza Vue',
   base: '/vue-docker/', //  The default path during deployment / secondary address / base can be used/
   themeConfig: {
-    logo: '/logo.png',
+    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Inicio', link: '/' },      
+      { text: 'Inicio', link: '/' },           
       { text: 'Comenzar', link: '/guide/intro' },
-      { text: 'CaribesTIC', link: 'https://caribestic.github.io/' },
-      { text: 'GitHub', link: 'https://github.com/CaribesTIC/vue-docker' }      
+      { text: 'CaribesTIC', link: 'https://caribestic.github.io/' }, 
     ],
     sidebar: [
       {
@@ -25,6 +27,9 @@ export default {
           { text: 'Conclusión', link: '/guide/conclusion' },
         ]
       }
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/CaribesTIC/vue-docker' }
     ]
   }
-}
+})
